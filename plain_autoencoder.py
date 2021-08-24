@@ -76,13 +76,11 @@ os.chdir(folder)
 model = autoencoder().cpu()
 criterion = nn.MSELoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate, weight_decay=1e-5)
-restart = True
+restart = False
 
 # restore checkpoints while restarting the script   
 if restart==True:
-    #restart_path = "PROVIDE RESTART PATH HERE"
-    restart_path = "/home/krupal/from_old_pc/krupal/desktop/Osnabrueck_Uni/Sem_4_WS_2020_21/ML_meets_Animal_comm/Code/MNIST/22Aug2021-1541/MNIST_AE.pk"
-    checkpoint = torch.load(restart_path)
+    restart_path = "PROVIDE RESTART PATH HERE"
     model.load_state_dict(checkpoint['model_state_dict'])
     optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
     start_epoch = checkpoint['epoch']
