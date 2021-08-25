@@ -1,8 +1,10 @@
-# adapted from https://github.com/L1aoXingyu/pytorch-beginner/blob/master/08-AutoEncoder/simple_autoencoder.py
-
-# Plain autoencoder to reconstruct MNIST images.
-# Implemented checkpoint restart logic to save progress
-# in case of unprecedented exit from the script
+"""
+Author              : Krupal Shah
+Adapted from        : https://github.com/L1aoXingyu/pytorch-beginner/blob/master/08-AutoEncoder/simple_autoencoder.py
+Program Description : Plain autoencoder to reconstruct MNIST images.
+                      Implemented checkpoint restart logic to save progress 
+                      in case of unprecedented exit from the script
+"""
 
 import os
 
