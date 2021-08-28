@@ -1,4 +1,4 @@
-# Plain-Autoencoder
+# Autoencoder
 Plain autoencoder applied on MNIST dataset to evaluate the performance.
 
 Plain autoencoder of 3 neurons in its bottleneck layer is applied to reconstruct MNIST data.
